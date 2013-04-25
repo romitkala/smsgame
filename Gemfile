@@ -5,7 +5,6 @@ gem 'rails', '3.0.20'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'twilio-ruby'
 gem 'uniquify'
 # Use unicorn as the web server
@@ -28,4 +27,8 @@ gem 'ruby-debug19'
 # and rake tasks are available in development mode:
 group :development, :test do
   gem 'rspec-rails'
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
 end
