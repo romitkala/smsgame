@@ -1,0 +1,21 @@
+<h1>Listing sms</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sms.each do |sm| %>
+  <tr>
+    <td><%= link_to 'Show', sm %></td>
+    <td><%= link_to 'Edit', edit_sm_path(sm) %></td>
+    <td><%= link_to 'Destroy', sm, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sm', new_sm_path %>
