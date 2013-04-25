@@ -14,7 +14,6 @@ gem 'uniquify'
 # gem 'capistrano'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
-gem 'ruby-debug19'
 
 # Bundle the extra gems:
 # gem 'bj'
@@ -28,6 +27,7 @@ gem 'ruby-debug19'
 group :development, :test do
   gem 'rspec-rails'
   gem 'sqlite3'
+  gem 'ruby-debug19'
 end
 group :production do
   gem 'pg'
